@@ -1,0 +1,13 @@
+<resources>
+    <bitmap id="LauncherIcon" filename="images/icon.png" />
+    <bitmap id="DefaultBackButton" filename="/images/goback_default.png" dithering="none" />
+    <bitmap id="PressedBackButton" filename="/images/goback_pressed.png" dithering="none" />
+    <bitmap id="DefaultAcceptButton" filename="/images/accept_default.png" dithering="none" />
+    <bitmap id="PressedAcceptButton" filename="/images/accept_pressed.png" dithering="none" />
+    <bitmap id="DefaultCancelButton" filename="/images/cancel_defaultx.png" dithering="none" />
+    <bitmap id="PressedCancelButton" filename="/images/cancel_pressed.png" dithering="none" />
+    <bitmap id="DefaultMinusButton" filename="/images/minus_default.png" dithering="none" />
+    <bitmap id="PressedMinusButton" filename="/images/minus_pressed.png" dithering="none" />
+    <bitmap id="DefaultPlusButton" filename="/images/plus_default.png" dithering="none" />
+    <bitmap id="PressedPlusButton" filename="/images/plus_pressed.png" dithering="none" />
+</resources>

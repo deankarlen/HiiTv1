@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+<pcToLineNum>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="67" pc="268435456" symbol="applyParams"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="68" pc="268435460" symbol="applyParams"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="69" pc="268435476" symbol="applyParams"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="70" pc="268435533" symbol="applyParams"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="71" pc="268435549" symbol="applyParams"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="72" pc="268435565" symbol="applyParams"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="73" pc="268435622" symbol="applyParams"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="76" pc="268435639" symbol="storeParams"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="77" pc="268435643" symbol="storeParams"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="78" pc="268435659" symbol="storeParams"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="79" pc="268435697" symbol="storeParams"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="80" pc="268435735" symbol="storeParams"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="81" pc="268435773" symbol="storeParams"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="82" pc="268435789" symbol="storeParams"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="83" pc="268435827" symbol="storeParams"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="84" pc="268435865" symbol="storeParams"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="87" pc="268435904" symbol="recoverParams"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="88" pc="268435908" symbol="recoverParams"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="89" pc="268435924" symbol="recoverParams"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="90" pc="268435955" symbol="recoverParams"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="91" pc="268435962" symbol="recoverParams"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="93" pc="268435975" symbol="recoverParams"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="94" pc="268436006" symbol="recoverParams"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="95" pc="268436013" symbol="recoverParams"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="97" pc="268436026" symbol="recoverParams"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="98" pc="268436057" symbol="recoverParams"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="99" pc="268436064" symbol="recoverParams"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="101" pc="268436077" symbol="recoverParams"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="102" pc="268436093" symbol="recoverParams"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="103" pc="268436124" symbol="recoverParams"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="104" pc="268436131" symbol="recoverParams"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="106" pc="268436144" symbol="recoverParams"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="107" pc="268436175" symbol="recoverParams"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="108" pc="268436182" symbol="recoverParams"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="110" pc="268436195" symbol="recoverParams"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="111" pc="268436226" symbol="recoverParams"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="112" pc="268436233" symbol="recoverParams"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="114" pc="268436246" symbol="recoverParams"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="117" pc="268436281" symbol="startupStages"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="118" pc="268436285" symbol="startupStages"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="119" pc="268436297" symbol="startupStages"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="120" pc="268436314" symbol="startupStages"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="121" pc="268436324" symbol="startupStages"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="122" pc="268436348" symbol="startupStages"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="123" pc="268436358" symbol="startupStages"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="124" pc="268436385" symbol="startupStages"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="125" pc="268436412" symbol="startupStages"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="126" pc="268436425" symbol="startupStages"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="127" pc="268436469" symbol="startupStages"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="128" pc="268436482" symbol="startupStages"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="129" pc="268436500" symbol="startupStages"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="132" pc="268436517" symbol="updateStage"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="133" pc="268436521" symbol="updateStage"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="134" pc="268436533" symbol="updateStage"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="135" pc="268436550" symbol="updateStage"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="136" pc="268436577" symbol="updateStage"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="137" pc="268436603" symbol="updateStage"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="139" pc="268436620" symbol="updateStage"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="140" pc="268436644" symbol="updateStage"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="141" pc="268436671" symbol="updateStage"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="144" pc="268436704" symbol="updateStage"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="145" pc="268436728" symbol="updateStage"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="146" pc="268436755" symbol="updateStage"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="147" pc="268436768" symbol="updateStage"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="149" pc="268436793" symbol="updateStage"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="150" pc="268436820" symbol="updateStage"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="151" pc="268436836" symbol="updateStage"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="152" pc="268436852" symbol="updateStage"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="153" pc="268436865" symbol="updateStage"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="154" pc="268436878" symbol="updateStage"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="155" pc="268436888" symbol="updateStage"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="166" pc="268436909" symbol="updateStage"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="167" pc="268436929" symbol="updateStage"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="169" pc="268436948" symbol="updateStage"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="170" pc="268436968" symbol="updateStage"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="172" pc="268436987" symbol="updateStage"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="173" pc="268437085" symbol="updateStage"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="174" pc="268437095" symbol="updateStage"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="177" pc="268437136" symbol="updateStage"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="178" pc="268437159" symbol="updateStage"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="181" pc="268437176" symbol="initialize"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="182" pc="268437180" symbol="initialize"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="183" pc="268437198" symbol="initialize"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="186" pc="268437211" symbol="onKey"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="188" pc="268437215" symbol="onKey"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="189" pc="268437242" symbol="onKey"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="190" pc="268437254" symbol="onKey"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="192" pc="268437260" symbol="onKey"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="195" pc="268437264" symbol="onTap"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="196" pc="268437268" symbol="onTap"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="197" pc="268437286" symbol="onTap"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="200" pc="268437290" symbol="onMenu"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="201" pc="268437294" symbol="onMenu"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="202" pc="268437318" symbol="onMenu"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="203" pc="268437342" symbol="onMenu"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="204" pc="268437356" symbol="onMenu"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="205" pc="268437370" symbol="onMenu"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="206" pc="268437402" symbol="onMenu"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="209" pc="268437406" symbol="discardActivity"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="210" pc="268437410" symbol="discardActivity"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="211" pc="268437428" symbol="discardActivity"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="212" pc="268437446" symbol="discardActivity"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="213" pc="268437468" symbol="discardActivity"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="214" pc="268437477" symbol="discardActivity"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="217" pc="268437506" symbol="saveActivity"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="218" pc="268437510" symbol="saveActivity"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="219" pc="268437528" symbol="saveActivity"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="220" pc="268437546" symbol="saveActivity"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="221" pc="268437568" symbol="saveActivity"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="222" pc="268437586" symbol="saveActivity"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="223" pc="268437595" symbol="saveActivity"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="226" pc="268437624" symbol="onSensor"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="227" pc="268437628" symbol="onSensor"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="228" pc="268437638" symbol="onSensor"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="229" pc="268437664" symbol="onSensor"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="230" pc="268437671" symbol="onSensor"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="234" pc="268437685" symbol="toggleActivity"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="235" pc="268437689" symbol="toggleActivity"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="236" pc="268437706" symbol="toggleActivity"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="237" pc="268437745" symbol="toggleActivity"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="238" pc="268437807" symbol="toggleActivity"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="239" pc="268437819" symbol="toggleActivity"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="240" pc="268437861" symbol="toggleActivity"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="241" pc="268437893" symbol="toggleActivity"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="242" pc="268437911" symbol="toggleActivity"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="245" pc="268437966" symbol="toggleActivity"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="246" pc="268437990" symbol="toggleActivity"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="247" pc="268438014" symbol="toggleActivity"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="248" pc="268438028" symbol="toggleActivity"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="251" pc="268438066" symbol="toggleActivity"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="257" pc="268438070" symbol="initialize"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="258" pc="268438074" symbol="initialize"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="262" pc="268438093" symbol="stopRecording"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="263" pc="268438097" symbol="stopRecording"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="264" pc="268438114" symbol="stopRecording"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="265" pc="268438150" symbol="stopRecording"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="266" pc="268438168" symbol="stopRecording"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="267" pc="268438186" symbol="stopRecording"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="268" pc="268438195" symbol="stopRecording"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="274" pc="268438218" symbol="onLayout"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="277" pc="268438223" symbol="onHide"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="281" pc="268438228" symbol="onShow"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="285" pc="268438233" symbol="durationToString"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="286" pc="268438237" symbol="durationToString"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="287" pc="268438256" symbol="durationToString"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="288" pc="268438275" symbol="durationToString"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="289" pc="268438282" symbol="durationToString"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="290" pc="268438293" symbol="durationToString"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="292" pc="268438306" symbol="durationToString"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="293" pc="268438328" symbol="durationToString"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="294" pc="268438339" symbol="durationToString"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="296" pc="268438352" symbol="durationToString"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="297" pc="268438368" symbol="durationToString"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="301" pc="268438372" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="303" pc="268438376" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="304" pc="268438412" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="305" pc="268438424" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="306" pc="268438460" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="310" pc="268438504" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="312" pc="268438521" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="313" pc="268438560" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="314" pc="268438596" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="316" pc="268438672" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="317" pc="268438710" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="319" pc="268438786" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="320" pc="268438824" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="324" pc="268438939" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="325" pc="268438958" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="326" pc="268438965" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="327" pc="268438979" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="328" pc="268438993" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="329" pc="268439007" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="330" pc="268439021" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="331" pc="268439028" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="332" pc="268439045" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="333" pc="268439059" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="334" pc="268439073" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="336" pc="268439083" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="337" pc="268439100" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="338" pc="268439114" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="339" pc="268439128" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="341" pc="268439138" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="342" pc="268439154" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="343" pc="268439210" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="344" pc="268439226" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="345" pc="268439243" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="346" pc="268439264" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="347" pc="268439279" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="348" pc="268439327" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="350" pc="268439355" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="351" pc="268439371" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="352" pc="268439454" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="353" pc="268439470" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="354" pc="268439536" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="355" pc="268439564" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="356" pc="268439618" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="357" pc="268439675" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="358" pc="268439703" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="359" pc="268439724" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="360" pc="268439766" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="362" pc="268439794" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="363" pc="268439810" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="364" pc="268439863" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="365" pc="268439879" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="370" pc="268439966" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleView.mc" lineNum="371" pc="268440002" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleApp.mc" lineNum="14" pc="268440091" symbol="initialize"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleApp.mc" lineNum="15" pc="268440095" symbol="initialize"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleApp.mc" lineNum="21" pc="268440114" symbol="onStart"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleApp.mc" lineNum="22" pc="268440118" symbol="onStart"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleApp.mc" lineNum="26" pc="268440163" symbol="onStop"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleApp.mc" lineNum="27" pc="268440167" symbol="onStop"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleApp.mc" lineNum="28" pc="268440185" symbol="onStop"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleApp.mc" lineNum="31" pc="268440230" symbol="onPosition"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleApp.mc" lineNum="35" pc="268440235" symbol="getInitialView"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleApp.mc" lineNum="36" pc="268440239" symbol="getInitialView"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\RecordSampleApp.mc" lineNum="37" pc="268440269" symbol="getInitialView"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonView.mc" lineNum="17" pc="268440323" symbol="initialize"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonView.mc" lineNum="18" pc="268440327" symbol="initialize"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonView.mc" lineNum="22" pc="268440346" symbol="onLayout"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonView.mc" lineNum="23" pc="268440350" symbol="onLayout"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonView.mc" lineNum="26" pc="268440388" symbol="setSampleView"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonView.mc" lineNum="27" pc="268440392" symbol="setSampleView"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonView.mc" lineNum="28" pc="268440402" symbol="setSampleView"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonView.mc" lineNum="32" pc="268440422" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonView.mc" lineNum="33" pc="268440426" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonView.mc" lineNum="34" pc="268440446" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonView.mc" lineNum="35" pc="268440482" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonView.mc" lineNum="36" pc="268440498" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonView.mc" lineNum="37" pc="268440523" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonView.mc" lineNum="38" pc="268440542" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonView.mc" lineNum="39" pc="268440599" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonView.mc" lineNum="40" pc="268440659" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonView.mc" lineNum="41" pc="268440722" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonView.mc" lineNum="42" pc="268440779" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonView.mc" lineNum="43" pc="268440839" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonView.mc" lineNum="44" pc="268440902" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonView.mc" lineNum="45" pc="268440959" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonView.mc" lineNum="46" pc="268441019" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonDelegate.mc" lineNum="14" pc="268441086" symbol="initialize"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonDelegate.mc" lineNum="15" pc="268441090" symbol="initialize"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonDelegate.mc" lineNum="18" pc="268441109" symbol="setSampleView"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonDelegate.mc" lineNum="19" pc="268441113" symbol="setSampleView"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonDelegate.mc" lineNum="22" pc="268441124" symbol="onMenu"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonDelegate.mc" lineNum="23" pc="268441128" symbol="onMenu"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonDelegate.mc" lineNum="24" pc="268441151" symbol="onMenu"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonDelegate.mc" lineNum="26" pc="268441173" symbol="onMenu"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonDelegate.mc" lineNum="27" pc="268441192" symbol="onMenu"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonDelegate.mc" lineNum="28" pc="268441210" symbol="onMenu"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonDelegate.mc" lineNum="29" pc="268441228" symbol="onMenu"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonDelegate.mc" lineNum="31" pc="268441256" symbol="onMenu"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonDelegate.mc" lineNum="32" pc="268441272" symbol="onMenu"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonDelegate.mc" lineNum="35" pc="268441276" symbol="onPreviousMode"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonDelegate.mc" lineNum="36" pc="268441280" symbol="onPreviousMode"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonDelegate.mc" lineNum="37" pc="268441311" symbol="onPreviousMode"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonDelegate.mc" lineNum="38" pc="268441321" symbol="onPreviousMode"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonDelegate.mc" lineNum="39" pc="268441332" symbol="onPreviousMode"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonDelegate.mc" lineNum="41" pc="268441418" symbol="onPreviousMode"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonDelegate.mc" lineNum="42" pc="268441434" symbol="onPreviousMode"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonDelegate.mc" lineNum="45" pc="268441438" symbol="onNextMode"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonDelegate.mc" lineNum="46" pc="268441442" symbol="onNextMode"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonDelegate.mc" lineNum="47" pc="268441473" symbol="onNextMode"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonDelegate.mc" lineNum="48" pc="268441483" symbol="onNextMode"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonDelegate.mc" lineNum="49" pc="268441494" symbol="onNextMode"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonDelegate.mc" lineNum="51" pc="268441580" symbol="onNextMode"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonDelegate.mc" lineNum="52" pc="268441596" symbol="onNextMode"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonDelegate.mc" lineNum="55" pc="268441600" symbol="onPreviousPage"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonDelegate.mc" lineNum="56" pc="268441604" symbol="onPreviousPage"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonDelegate.mc" lineNum="57" pc="268441635" symbol="onPreviousPage"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonDelegate.mc" lineNum="58" pc="268441645" symbol="onPreviousPage"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonDelegate.mc" lineNum="59" pc="268441656" symbol="onPreviousPage"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonDelegate.mc" lineNum="61" pc="268441742" symbol="onPreviousPage"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonDelegate.mc" lineNum="62" pc="268441758" symbol="onPreviousPage"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonDelegate.mc" lineNum="65" pc="268441762" symbol="onNextPage"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonDelegate.mc" lineNum="66" pc="268441766" symbol="onNextPage"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonDelegate.mc" lineNum="67" pc="268441797" symbol="onNextPage"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonDelegate.mc" lineNum="68" pc="268441807" symbol="onNextPage"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonDelegate.mc" lineNum="69" pc="268441818" symbol="onNextPage"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonDelegate.mc" lineNum="71" pc="268441904" symbol="onNextPage"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonDelegate.mc" lineNum="72" pc="268441920" symbol="onNextPage"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonDelegate.mc" lineNum="75" pc="268441924" symbol="onBack"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonDelegate.mc" lineNum="76" pc="268441928" symbol="onBack"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonDelegate.mc" lineNum="77" pc="268441959" symbol="onBack"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonDelegate.mc" lineNum="78" pc="268441969" symbol="onBack"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonDelegate.mc" lineNum="79" pc="268441980" symbol="onBack"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonDelegate.mc" lineNum="81" pc="268442066" symbol="onBack"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonDelegate.mc" lineNum="82" pc="268442082" symbol="onBack"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonDelegate.mc" lineNum="85" pc="268442086" symbol="onSelect"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonDelegate.mc" lineNum="86" pc="268442090" symbol="onSelect"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonDelegate.mc" lineNum="87" pc="268442121" symbol="onSelect"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonDelegate.mc" lineNum="88" pc="268442131" symbol="onSelect"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonDelegate.mc" lineNum="89" pc="268442142" symbol="onSelect"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonDelegate.mc" lineNum="91" pc="268442228" symbol="onSelect"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\MenuButtonDelegate.mc" lineNum="92" pc="268442244" symbol="onSelect"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\ButtonView.mc" lineNum="13" pc="268442248" symbol="initialize"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\ButtonView.mc" lineNum="14" pc="268442252" symbol="initialize"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\ButtonView.mc" lineNum="18" pc="268442271" symbol="onLayout"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\ButtonView.mc" lineNum="19" pc="268442275" symbol="onLayout"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\ButtonView.mc" lineNum="23" pc="268442313" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\ButtonView.mc" lineNum="25" pc="268442317" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\ButtonView.mc" lineNum="26" pc="268442337" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\ButtonView.mc" lineNum="27" pc="268442373" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\ButtonView.mc" lineNum="28" pc="268442424" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\ButtonView.mc" lineNum="29" pc="268442475" symbol="onUpdate"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\ButtonDelegate.mc" lineNum="14" pc="268442527" symbol="initialize"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\ButtonDelegate.mc" lineNum="15" pc="268442531" symbol="initialize"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\ButtonDelegate.mc" lineNum="18" pc="268442550" symbol="setSampleView"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\ButtonDelegate.mc" lineNum="19" pc="268442554" symbol="setSampleView"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\ButtonDelegate.mc" lineNum="22" pc="268442565" symbol="onNextMode"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\ButtonDelegate.mc" lineNum="23" pc="268442569" symbol="onNextMode"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\ButtonDelegate.mc" lineNum="24" pc="268442587" symbol="onNextMode"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\ButtonDelegate.mc" lineNum="27" pc="268442591" symbol="onPreviousMode"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\ButtonDelegate.mc" lineNum="28" pc="268442595" symbol="onPreviousMode"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\ButtonDelegate.mc" lineNum="29" pc="268442613" symbol="onPreviousMode"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\ButtonDelegate.mc" lineNum="32" pc="268442617" symbol="onBack"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\ButtonDelegate.mc" lineNum="33" pc="268442621" symbol="onBack"/>
+<entry filename="C:\\Users\\karlen\\eclipse-workspace\\HiiTv1\\source\\ButtonDelegate.mc" lineNum="34" pc="268442649" symbol="onBack"/>
+<entry filename="Rez" lineNum="28" pc="268442653" symbol="ButtonLayout"/>
+<entry filename="Rez" lineNum="30" pc="268442657" symbol="ButtonLayout"/>
+<entry filename="Rez" lineNum="31" pc="268443008" symbol="ButtonLayout"/>
+<entry filename="Rez" lineNum="32" pc="268443359" symbol="ButtonLayout"/>
+<entry filename="Rez" lineNum="35" pc="268443710" symbol="ButtonLayout"/>
+<entry filename="Rez" lineNum="44" pc="268443748" symbol="MenuButtonLayout"/>
+<entry filename="Rez" lineNum="46" pc="268443752" symbol="MenuButtonLayout"/>
+<entry filename="Rez" lineNum="47" pc="268444103" symbol="MenuButtonLayout"/>
+<entry filename="Rez" lineNum="48" pc="268444454" symbol="MenuButtonLayout"/>
+<entry filename="Rez" lineNum="49" pc="268444805" symbol="MenuButtonLayout"/>
+<entry filename="Rez" lineNum="50" pc="268445156" symbol="MenuButtonLayout"/>
+<entry filename="Rez" lineNum="51" pc="268445507" symbol="MenuButtonLayout"/>
+<entry filename="Rez" lineNum="54" pc="268445858" symbol="MenuButtonLayout"/>
+</pcToLineNum>
+<symbolTable>
+<entry id="44" method="true" symbol="MenuButtonLayout"/>
+<entry id="8389124" method="true" symbol="onUpdate"/>
+<entry id="19" object="true" symbol="RecordSampleApp"/>
+<entry id="69" method="true" symbol="saveActivity"/>
+<entry field="true" id="48" symbol="workDuration"/>
+<entry id="8389097" method="true" symbol="onKey"/>
+<entry field="true" id="8" symbol="stage"/>
+<entry field="true" id="8388611" symbol="Toybox"/>
+<entry id="8388645" symbol="Time"/>
+<entry id="8389619" method="true" symbol="onSelect"/>
+<entry id="8388770" module="true" symbol="Strings"/>
+<entry id="8389897" symbol="stateDefault"/>
+<entry id="8388643" symbol="Sensor"/>
+<entry field="true" id="28" symbol="sampleView"/>
+<entry id="29" method="true" symbol="setSampleView"/>
+<entry field="true" id="46" symbol="stageString"/>
+<entry field="true" id="32" symbol="DefaultBackButton"/>
+<entry id="8389082" method="true" symbol="onNextMode"/>
+<entry id="22" object="true" symbol="ButtonView"/>
+<entry id="8389280" method="true" symbol="getInitialView"/>
+<entry field="true" id="39" symbol="PressedMinusButton"/>
+<entry id="8388640" symbol="Lang"/>
+<entry id="63" method="true" symbol="applyParams"/>
+<entry id="70" method="true" symbol="onSensor"/>
+<entry id="8388769" module="true" symbol="Rez"/>
+<entry id="24" method="true" symbol="stopRecording"/>
+<entry id="8389123" method="true" symbol="onShow"/>
+<entry field="true" id="37" symbol="PressedCancelButton"/>
+<entry field="true" id="40" symbol="DefaultPlusButton"/>
+<entry field="true" id="35" symbol="PressedAcceptButton"/>
+<entry id="25" method="true" symbol="durationToString"/>
+<entry id="8388638" symbol="ActivityRecording"/>
+<entry id="8389103" symbol="behavior"/>
+<entry id="64" method="true" symbol="storeParams"/>
+<entry id="8389098" method="true" symbol="onTap"/>
+<entry id="8388636" symbol="Attention"/>
+<entry id="67" method="true" symbol="updateStage"/>
+<entry id="20" object="true" symbol="MenuButtonView"/>
+<entry id="8389900" symbol="stateDisabled"/>
+<entry id="8388702" method="true" symbol="initialize"/>
+<entry field="true" id="45" symbol="AppName"/>
+<entry id="8389898" symbol="stateHighlighted"/>
+<entry id="8389899" symbol="stateSelected"/>
+<entry field="true" id="55" symbol="minHR"/>
+<entry id="8388890" symbol="sport"/>
+<entry id="8388892" symbol="name"/>
+<entry id="8389080" method="true" symbol="onMenu"/>
+<entry id="21" object="true" symbol="MenuButtonDelegate"/>
+<entry id="8389078" method="true" symbol="onNextPage"/>
+<entry field="true" id="38" symbol="DefaultMinusButton"/>
+<entry field="true" id="12" symbol="prevMaxHR"/>
+<entry id="66" method="true" symbol="startupStages"/>
+<entry field="true" id="26" symbol="recordSampleView"/>
+<entry field="true" id="42" symbol="LauncherIcon"/>
+<entry field="true" id="52" symbol="reachedTargetHR"/>
+<entry field="true" id="60" symbol="rampDownVibe"/>
+<entry id="8388646" symbol="Timer"/>
+<entry field="true" id="56" symbol="stageTimer"/>
+<entry id="8389081" method="true" symbol="onBack"/>
+<entry field="true" id="53" symbol="updateMilliseconds"/>
+<entry id="8389083" method="true" symbol="onPreviousMode"/>
+<entry id="8389281" method="true" symbol="onStop"/>
+<entry id="8389065" symbol="locY"/>
+<entry id="8389064" symbol="locX"/>
+<entry id="8388771" module="true" symbol="Drawables"/>
+<entry field="true" id="59" symbol="rampUpVibe"/>
+<entry id="43" method="true" symbol="ButtonLayout"/>
+<entry id="8389122" method="true" symbol="onLayout"/>
+<entry id="17" object="true" symbol="BaseInputDelegate"/>
+<entry id="8389279" method="true" symbol="onStart"/>
+<entry field="true" id="36" symbol="DefaultCancelButton"/>
+<entry field="true" id="16" symbol="paramPoint"/>
+<entry id="8389067" symbol="height"/>
+<entry field="true" id="49" symbol="restDuration"/>
+<entry field="true" id="8388651" symbol="session"/>
+<entry field="true" id="57" symbol="lowVibeProfile"/>
+<entry field="true" id="47" symbol="paramString"/>
+<entry id="71" method="true" symbol="toggleActivity"/>
+<entry id="27" method="true" symbol="onPosition"/>
+<entry id="23" object="true" symbol="ButtonDelegate"/>
+<entry field="true" id="15" symbol="params"/>
+<entry field="true" id="51" symbol="restHR"/>
+<entry id="31" module="true" symbol="Layouts"/>
+<entry field="true" id="61" symbol="previousUpdateMoment"/>
+<entry id="8388642" symbol="Position"/>
+<entry id="8389079" method="true" symbol="onPreviousPage"/>
+<entry id="18" object="true" symbol="RecordSampleView"/>
+<entry id="8389125" method="true" symbol="onHide"/>
+<entry field="true" id="14" symbol="currHR"/>
+<entry id="8389892" symbol="background"/>
+<entry id="8389345" symbol="rezId"/>
+<entry field="true" id="33" symbol="PressedBackButton"/>
+<entry field="true" id="62" symbol="stageEndMoment"/>
+<entry id="65" method="true" symbol="recoverParams"/>
+<entry id="8389066" symbol="width"/>
+<entry field="true" id="10" symbol="remainingTimeInStage"/>
+<entry field="true" id="54" symbol="maxHR"/>
+<entry id="30" module="true" symbol="Menus"/>
+<entry field="true" id="9" symbol="repCounter"/>
+<entry field="true" id="58" symbol="highVibeProfile"/>
+<entry field="true" id="41" symbol="PressedPlusButton"/>
+<entry field="true" id="50" symbol="workHR"/>
+<entry id="8388772" module="true" symbol="Fonts"/>
+<entry field="true" id="34" symbol="DefaultAcceptButton"/>
+<entry id="68" method="true" symbol="discardActivity"/>
+<entry field="true" id="13" symbol="prevMinHR"/>
+<entry field="true" id="11" symbol="activityStartMoment"/>
+</symbolTable>
+<localVars>
+<entry endPc="268435638" name="workParams" stackId="1" startPc="268435460"/>
+<entry endPc="268435638" name="restParams" stackId="2" startPc="268435460"/>
+<entry endPc="268435903" name="workParams" stackId="1" startPc="268435643"/>
+<entry endPc="268435903" name="restParams" stackId="2" startPc="268435643"/>
+<entry endPc="268436280" name="workParams" stackId="1" startPc="268435908"/>
+<entry endPc="268436280" name="val2" stackId="4" startPc="268435908"/>
+<entry endPc="268436280" name="restParams" stackId="5" startPc="268435908"/>
+<entry endPc="268436280" name="val1" stackId="3" startPc="268435908"/>
+<entry endPc="268436280" name="val0" stackId="2" startPc="268435908"/>
+<entry endPc="268436516" name="now" stackId="1" startPc="268436285"/>
+<entry endPc="268437175" name="now" stackId="1" startPc="268436521"/>
+<entry endPc="268437405" name="menuButtonView" stackId="1" startPc="268437294"/>
+<entry endPc="268437405" name="menuButtonDelegate" stackId="2" startPc="268437294"/>
+<entry endPc="268437684" name="hrinfo" stackId="2" startPc="268437628"/>
+<entry endPc="268438060" name="buttonDelegate" stackId="2" startPc="268437966"/>
+<entry endPc="268438060" name="buttonView" stackId="1" startPc="268437966"/>
+<entry endPc="268438371" name="minutes" stackId="2" startPc="268438237"/>
+<entry endPc="268438371" name="seconds" stackId="3" startPc="268438237"/>
+<entry endPc="268438371" name="buff" stackId="4" startPc="268438237"/>
+<entry endPc="268439960" name="timeString2" stackId="12" startPc="268438939"/>
+<entry endPc="268439960" name="timeString" stackId="11" startPc="268438939"/>
+<entry endPc="268439960" name="dur" stackId="10" startPc="268438939"/>
+<entry endPc="268439960" name="now" stackId="9" startPc="268438939"/>
+<entry endPc="268439960" name="background2" stackId="7" startPc="268438939"/>
+<entry endPc="268439960" name="background1" stackId="6" startPc="268438939"/>
+<entry endPc="268439960" name="background0" stackId="5" startPc="268438939"/>
+<entry endPc="268439960" name="stageText" stackId="8" startPc="268438939"/>
+<entry endPc="268439960" name="foreground" stackId="4" startPc="268438939"/>
+<entry endPc="268439960" name="y" stackId="3" startPc="268438939"/>
+<entry endPc="268439960" name="x" stackId="2" startPc="268438939"/>
+<entry endPc="268441082" name="stageParams" stackId="3" startPc="268440523"/>
+<entry endPc="268441085" name="point" stackId="2" startPc="268440426"/>
+<entry endPc="268441437" name="minutes" stackId="2" startPc="268441280"/>
+<entry endPc="268441437" name="stageParams" stackId="1" startPc="268441280"/>
+<entry endPc="268441599" name="minutes" stackId="2" startPc="268441442"/>
+<entry endPc="268441599" name="stageParams" stackId="1" startPc="268441442"/>
+<entry endPc="268441761" name="stageParams" stackId="1" startPc="268441604"/>
+<entry endPc="268441761" name="seconds" stackId="2" startPc="268441604"/>
+<entry endPc="268441923" name="stageParams" stackId="1" startPc="268441766"/>
+<entry endPc="268441923" name="seconds" stackId="2" startPc="268441766"/>
+<entry endPc="268442085" name="stageParams" stackId="1" startPc="268441928"/>
+<entry endPc="268442085" name="hr" stackId="2" startPc="268441928"/>
+<entry endPc="268442247" name="stageParams" stackId="1" startPc="268442090"/>
+<entry endPc="268442247" name="hr" stackId="2" startPc="268442090"/>
+<entry endPc="268443747" name="rez_cmp_local_custom_selectable_8MEXH27WBYNBKXYT3W2H" stackId="3" startPc="268442657"/>
+<entry endPc="268443747" name="rez_cmp_local_custom_selectable_4H21SUTLQ5MEBO285F5X" stackId="2" startPc="268442657"/>
+<entry endPc="268443747" name="rez_cmp_local_custom_selectable_HFFGITUN1JLH2YB6DPJL" stackId="4" startPc="268442657"/>
+<entry endPc="268445925" name="rez_cmp_local_custom_selectable_FE1BHPXGAK7YSQM0E51O" stackId="2" startPc="268443752"/>
+<entry endPc="268445925" name="rez_cmp_local_custom_selectable_1RLC12H5Z1TNTY6DZ8S2" stackId="5" startPc="268443752"/>
+<entry endPc="268445925" name="rez_cmp_local_custom_selectable_MXJWDJ3GVLP55VYX7HXD" stackId="7" startPc="268443752"/>
+<entry endPc="268445925" name="rez_cmp_local_custom_selectable_DQ3CLQ8VCAUJQSQVJZH8" stackId="3" startPc="268443752"/>
+<entry endPc="268445925" name="rez_cmp_local_custom_selectable_TM26NCR2QZ73U18E06ZA" stackId="6" startPc="268443752"/>
+<entry endPc="268445925" name="rez_cmp_local_custom_selectable_LUCIKS6QYUCSJ6CDCJQG" stackId="4" startPc="268443752"/>
+</localVars>
+<annotations/>
+<functions>
+<functionEntry name="applyParams" parent="BaseInputDelegate">
+<documentation/>
+</functionEntry>
+<functionEntry name="storeParams" parent="BaseInputDelegate">
+<documentation/>
+</functionEntry>
+<functionEntry name="recoverParams" parent="BaseInputDelegate">
+<documentation/>
+</functionEntry>
+<functionEntry name="startupStages" parent="BaseInputDelegate">
+<documentation/>
+</functionEntry>
+<functionEntry name="updateStage" parent="BaseInputDelegate">
+<documentation/>
+</functionEntry>
+<functionEntry name="initialize" parent="BaseInputDelegate">
+<documentation/>
+</functionEntry>
+<functionEntry name="onKey" parent="BaseInputDelegate">
+<param id="evt"/>
+<documentation/>
+</functionEntry>
+<functionEntry name="onTap" parent="BaseInputDelegate">
+<param id="evt"/>
+<documentation/>
+</functionEntry>
+<functionEntry name="onMenu" parent="BaseInputDelegate">
+<documentation/>
+</functionEntry>
+<functionEntry name="discardActivity" parent="BaseInputDelegate">
+<documentation/>
+</functionEntry>
+<functionEntry name="saveActivity" parent="BaseInputDelegate">
+<documentation/>
+</functionEntry>
+<functionEntry name="onSensor" parent="BaseInputDelegate">
+<param id="sensorInfo"/>
+<documentation/>
+</functionEntry>
+<functionEntry name="toggleActivity" parent="BaseInputDelegate">
+<documentation/>
+</functionEntry>
+<functionEntry name="initialize" parent="RecordSampleView">
+<documentation/>
+</functionEntry>
+<functionEntry name="stopRecording" parent="RecordSampleView">
+<documentation><![CDATA[<div class="description"> Stop the recording if necessary<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry name="onLayout" parent="RecordSampleView">
+<param id="dc"/>
+<documentation><![CDATA[<div class="description"> Load your resources here<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry name="onHide" parent="RecordSampleView">
+<documentation/>
+</functionEntry>
+<functionEntry name="onShow" parent="RecordSampleView">
+<documentation><![CDATA[<div class="description"> Restore the state of the app and prepare the view to be shown.<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry name="durationToString" parent="RecordSampleView">
+<param id="dur"/>
+<documentation/>
+</functionEntry>
+<functionEntry name="onUpdate" parent="RecordSampleView">
+<param id="dc"/>
+<documentation><![CDATA[<div class="description"> Update the view<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry name="initialize" parent="RecordSampleApp">
+<documentation/>
+</functionEntry>
+<functionEntry name="onStart" parent="RecordSampleApp">
+<param id="state"/>
+<documentation><![CDATA[<div class="description"> onStart() is called on application start up<br/> We need to enable the location events for now so that we make sure GPS<br/> is on.<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry name="onStop" parent="RecordSampleApp">
+<param id="state"/>
+<documentation><![CDATA[<div class="description"> onStop() is called when your application is exiting<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry name="onPosition" parent="RecordSampleApp">
+<param id="info"/>
+<documentation/>
+</functionEntry>
+<functionEntry name="getInitialView" parent="RecordSampleApp">
+<documentation><![CDATA[<div class="description"> Return the initial view of your application here<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry name="initialize" parent="MenuButtonView">
+<documentation><![CDATA[<div class="description"> Constructor<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry name="onLayout" parent="MenuButtonView">
+<param id="dc"/>
+<documentation><![CDATA[<div class="description"> Load your resources here<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry name="setSampleView" parent="MenuButtonView">
+<param id="sv"/>
+<documentation/>
+</functionEntry>
+<functionEntry name="onUpdate" parent="MenuButtonView">
+<param id="dc"/>
+<documentation><![CDATA[<div class="description"> Update the view<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry name="initialize" parent="MenuButtonDelegate">
+<documentation/>
+</functionEntry>
+<functionEntry name="setSampleView" parent="MenuButtonDelegate">
+<param id="sv"/>
+<documentation/>
+</functionEntry>
+<functionEntry name="onMenu" parent="MenuButtonDelegate">
+<documentation/>
+</functionEntry>
+<functionEntry name="onPreviousMode" parent="MenuButtonDelegate">
+<documentation/>
+</functionEntry>
+<functionEntry name="onNextMode" parent="MenuButtonDelegate">
+<documentation/>
+</functionEntry>
+<functionEntry name="onPreviousPage" parent="MenuButtonDelegate">
+<documentation/>
+</functionEntry>
+<functionEntry name="onNextPage" parent="MenuButtonDelegate">
+<documentation/>
+</functionEntry>
+<functionEntry name="onBack" parent="MenuButtonDelegate">
+<documentation/>
+</functionEntry>
+<functionEntry name="onSelect" parent="MenuButtonDelegate">
+<documentation/>
+</functionEntry>
+<functionEntry name="initialize" parent="ButtonView">
+<documentation><![CDATA[<div class="description"> Constructor<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry name="onLayout" parent="ButtonView">
+<param id="dc"/>
+<documentation><![CDATA[<div class="description"> Load your resources here<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry name="onUpdate" parent="ButtonView">
+<param id="dc"/>
+<documentation><![CDATA[<div class="description"> Update the view<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry name="initialize" parent="ButtonDelegate">
+<documentation/>
+</functionEntry>
+<functionEntry name="setSampleView" parent="ButtonDelegate">
+<param id="sv"/>
+<documentation/>
+</functionEntry>
+<functionEntry name="onNextMode" parent="ButtonDelegate">
+<documentation/>
+</functionEntry>
+<functionEntry name="onPreviousMode" parent="ButtonDelegate">
+<documentation/>
+</functionEntry>
+<functionEntry name="onBack" parent="ButtonDelegate">
+<documentation/>
+</functionEntry>
+<functionEntry name="ButtonLayout" parent="Layouts">
+<param id="dc"/>
+<documentation><![CDATA[<div class="description"> Draw the layout<br/> param The context<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry name="MenuButtonLayout" parent="Layouts">
+<param id="dc"/>
+<documentation><![CDATA[<div class="description"> Draw the layout<br/> param The context<br/></div>]]></documentation>
+</functionEntry>
+</functions>
+</debugInfo>
