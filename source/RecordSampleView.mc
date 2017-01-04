@@ -227,7 +227,7 @@ class BaseInputDelegate extends Ui.BehaviorDelegate
 
     function onSensor(sensorInfo){
     	var hrinfo = sensorInfo.heartRate;
-    	System.println("hr:"+hrinfo);
+    	// System.println("hr:"+hrinfo);
     	if (hrinfo != null){
 	    	currHR = hrinfo;
 	    }
