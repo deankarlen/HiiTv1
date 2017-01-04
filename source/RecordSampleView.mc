@@ -153,6 +153,7 @@ class BaseInputDelegate extends Ui.BehaviorDelegate
 			minHR = 100;
 			reachedTargetHR = false;
 			Attention.backlight(true);
+			session.addLap();
 		}
 	    // this does not seem to work if a duration is given
 		//var hri = Monitor.getHeartRateHistory(1,true);
@@ -209,6 +210,7 @@ class BaseInputDelegate extends Ui.BehaviorDelegate
 	function discardActivity(){
 		stageTimer.stop();
         session.stop();
+        session.discard();
         Sensor.setEnabledSensors([]);
 		session = null;
         Ui.popView(Ui.SLIDE_IMMEDIATE);
@@ -234,7 +236,7 @@ class BaseInputDelegate extends Ui.BehaviorDelegate
     function toggleActivity() {
         if( Toybox has :ActivityRecording ) {
             if( ( session == null ) || ( session.isRecording() == false ) ) {
-                session = Record.createSession({:name=>"Hiit", :sport=>Record.SPORT_RUNNING});
+                session = Record.createSession({:name=>"Hiit", :sport=>Record.SPORT_TRAINING, :subSport=>Record.SUB_SPORT_CARDIO_TRAINING});
                 startupStages();
                 Sensor.setEnabledSensors([Sensor.SENSOR_HEARTRATE]);
                 Sensor.enableSensorEvents(method(:onSensor));
@@ -314,9 +316,10 @@ class RecordSampleView extends Ui.View {
                 dc.drawText(dc.getWidth() / 2, 10, Gfx.FONT_LARGE, 
                 "HiiT App", Gfx.TEXT_JUSTIFY_CENTER | Gfx.TEXT_JUSTIFY_VCENTER);
                 dc.drawLine(0,25,dc.getWidth(),25);
-                dc.drawText(dc.getWidth() / 2, 65, Gfx.FONT_MEDIUM, 
+                dc.drawLine(0,28,dc.getWidth(),28);
+                dc.drawText(dc.getWidth() / 2, 70, Gfx.FONT_MEDIUM, 
                 "Press right\n button to Start\n& Stop Recording", Gfx.TEXT_JUSTIFY_CENTER | Gfx.TEXT_JUSTIFY_VCENTER);
-                dc.drawLine(0,120,dc.getWidth(),120);
+                dc.drawLine(0,118,dc.getWidth(),118);
                 dc.drawText(dc.getWidth() / 2, 160, Gfx.FONT_MEDIUM, 
                 "Hold right\n button to\nChange Options", Gfx.TEXT_JUSTIFY_CENTER | Gfx.TEXT_JUSTIFY_VCENTER);
             }
@@ -351,18 +354,18 @@ class RecordSampleView extends Ui.View {
                 dc.fillRectangle(0, y, dc.getWidth(), dc.getFontHeight(Gfx.FONT_LARGE)+2*dc.getFontHeight(Gfx.FONT_NUMBER_HOT));
                 dc.setColor(foreground, background1);
                 dc.drawText(x, y, Gfx.FONT_LARGE, stageText+" "+repCounter.toString(), Gfx.TEXT_JUSTIFY_CENTER);
-                y += dc.getFontHeight(Gfx.FONT_LARGE);
+                y += dc.getFontHeight(Gfx.FONT_LARGE)-1;
                 dc.drawText(0, y+20, Gfx.FONT_LARGE, "HR: ", Gfx.TEXT_JUSTIFY_LEFT);
                 dc.drawText(x, y, Gfx.FONT_NUMBER_HOT, currHR.toString(), Gfx.TEXT_JUSTIFY_CENTER);
-                y += dc.getFontHeight(Gfx.FONT_NUMBER_HOT);
+                y += dc.getFontHeight(Gfx.FONT_NUMBER_HOT)-1;
                 var timeString2 = durationToString(remainingTimeInStage);
                 dc.drawText(x, y, Gfx.FONT_NUMBER_HOT, timeString2, Gfx.TEXT_JUSTIFY_CENTER);
-                y += dc.getFontHeight(Gfx.FONT_NUMBER_HOT);
+                y += dc.getFontHeight(Gfx.FONT_NUMBER_HOT)-1;
                 
                 dc.setColor(background2, background2);
-                dc.fillRectangle(0, y, dc.getWidth(), dc.getFontHeight(Gfx.FONT_NUMBER_HOT));
+                dc.fillRectangle(0, y-3, dc.getWidth(), dc.getFontHeight(Gfx.FONT_NUMBER_HOT));
                 dc.setColor(foreground, background2);
-                dc.drawText(x, y, Gfx.FONT_NUMBER_MEDIUM, prevMinHR.toString()+"-"+prevMaxHR.toString(), Gfx.TEXT_JUSTIFY_CENTER);
+                dc.drawText(x, y-3, Gfx.FONT_NUMBER_MEDIUM, prevMinHR.toString()+"-"+prevMaxHR.toString(), Gfx.TEXT_JUSTIFY_CENTER);
             }
         }
         // tell the user this sample doesn't work
