@@ -25,6 +25,7 @@ using Toybox.Time as Time;
 using Toybox.Application as App;
 using Toybox.Sensor as Sensor;
 using Toybox.SensorHistory as SensoryHistory;
+using Toybox.Math as Math;
 
 var session = null;
 // stage: 0 - not recording, 1 - high intensity, 2 - recovery
@@ -40,6 +41,13 @@ var currHR = 0;
 var params = [[4,0,170],[1,0,130]];
 var paramPoint = 0;
 
+// historical record for plotting
+var currHRhistory = null;
+var prevHRhistory = null;
+var maxHRhistoryPoints = 140;
+var currHRhistoryPoints = 0;
+var prevHRhistoryPoints = 0;
+
 class BaseInputDelegate extends Ui.BehaviorDelegate
 {
 
@@ -47,7 +55,6 @@ class BaseInputDelegate extends Ui.BehaviorDelegate
     var restDuration = null;
     var workHR = null;
     var restHR = null;
-
     
     var reachedTargetHR = false;
     // timer intervals specified in milliseconds
@@ -114,12 +121,20 @@ class BaseInputDelegate extends Ui.BehaviorDelegate
 		params = [workParams,restParams];
 	}
 	
+	function swapHistories(){
+		prevHRhistory = currHRhistory;
+		prevHRhistoryPoints = currHRhistoryPoints;
+		currHRhistory = new [maxHRhistoryPoints];
+		currHRhistoryPoints =0;
+	} 
+	
 	function startupStages(){
 		applyParams();
 		var now = Time.now();
 		activityStartMoment = now;
 	    Attention.vibrate(rampUpVibe);
 	    previousUpdateMoment = now;
+	    swapHistories();
 		stageEndMoment = now.add(workDuration);
 		remainingTimeInStage = stageEndMoment.subtract(now);
 		stage = 1;
@@ -130,7 +145,6 @@ class BaseInputDelegate extends Ui.BehaviorDelegate
 	}
 	
 	function updateStage(){
-	    applyParams();
 		var now = Time.now();
 		remainingTimeInStage = stageEndMoment.subtract(now);
 		if (remainingTimeInStage.value() <= 0) {
@@ -146,11 +160,12 @@ class BaseInputDelegate extends Ui.BehaviorDelegate
 				stage = 1;
 				repCounter = repCounter+1;
 			}
+			swapHistories();
 			remainingTimeInStage = stageEndMoment.subtract(now);
 			prevMaxHR = maxHR;
 			prevMinHR = minHR;
 			maxHR = 10;
-			minHR = 100;
+			minHR = 255;
 			reachedTargetHR = false;
 			Attention.backlight(true);
 			session.addLap();
@@ -230,7 +245,23 @@ class BaseInputDelegate extends Ui.BehaviorDelegate
     	// System.println("hr:"+hrinfo);
     	if (hrinfo != null){
 	    	currHR = hrinfo;
-	    }
+	   
+	    	var stageDuration = workDuration;
+	    	if (stage == 2){
+	    		stageDuration = restDuration;
+			}
+			var now = Time.now();
+			var timeInStage = stageDuration.subtract(stageEndMoment.subtract(now));
+			var point = Math.floor(maxHRhistoryPoints*timeInStage.value()/stageDuration.value());
+			if (point>0 && point<maxHRhistoryPoints){
+				var xtra = point-currHRhistoryPoints;
+				for (var i = 0; i < xtra; i += 1){
+					var p = (currHRhistoryPoints+i).toNumber();
+					currHRhistory[p]=currHR;
+				}
+				currHRhistoryPoints = point;
+			}
+		}
     }
 
     function toggleActivity() {
@@ -298,6 +329,28 @@ class RecordSampleView extends Ui.View {
         buff = buff + seconds.toString();
         return buff;
     }
+    
+    function drawHistory(dc,y,dy,history,historyPoints,yOff,targetHR){
+    	var xOff = 4;
+    	var HRlow = 50;
+    	var HRhigh = 200;
+    	var y0 = y+dy-yOff;
+    	for (var i=0; i<historyPoints; i+=1){
+    		var pix = (dy-2*yOff)*(history[i]-HRlow)/(HRhigh-HRlow);
+    		if (pix<1){
+    			pix=1;
+    		}
+    		if (pix>dy-2*yOff){
+    			pix=dy-2*yOff;
+    		}
+    		dc.drawLine(xOff+i,y0,xOff+i,y0-pix);
+    	}
+    	var pixTarget = (dy-2*yOff)*(targetHR-HRlow)/(HRhigh-HRlow);
+    	dc.setPenWidth(2);
+    	dc.setColor(Gfx.COLOR_GREEN, Gfx.COLOR_GREEN);
+    	dc.drawLine(xOff,y0-pixTarget,xOff+historyPoints,y0-pixTarget);
+    	dc.setPenWidth(1);
+    }
 
     //! Update the view
     function onUpdate(dc) {
@@ -330,16 +383,32 @@ class RecordSampleView extends Ui.View {
                 var background0 = Gfx.COLOR_BLACK;
                 var background1 = Gfx.COLOR_BLACK;
                 var background2 = Gfx.COLOR_BLACK;
+                var background3 = Gfx.COLOR_BLACK;
+                var background4 = Gfx.COLOR_BLACK;
                 var stageText = "Not Started";
+                var currTargetHR = 0;
+                var prevTargetHR = 0;
                 if (stage==1) {
                 	background1 = Gfx.COLOR_RED;
                 	background2 = Gfx.COLOR_BLUE;
+                	background3 = 0x770000;
+                	background4 = Gfx.COLOR_DK_BLUE;
                 	stageText = "High Int";
+                	var pars0 = params[0];
+                	currTargetHR = pars0[2];
+                	var pars1 = params[1];
+                	prevTargetHR = pars1[2];
                 }
                 if (stage==2) {
                 	background1 = Gfx.COLOR_BLUE;
                 	background2 = Gfx.COLOR_RED;
+                	background3 = Gfx.COLOR_DK_BLUE;
+                	background4 = 0x770000;
                 	stageText = "Recovery";
+                	var pars0 = params[0];
+                	prevTargetHR = pars0[2];
+                	var pars1 = params[1];
+                	currTargetHR = pars1[2];
                 }
                 dc.setColor(background0, background0);
                 dc.fillRectangle(0, 0, dc.getWidth(), dc.getFontHeight(Gfx.FONT_LARGE));
@@ -352,7 +421,9 @@ class RecordSampleView extends Ui.View {
                 
                 dc.setColor(background1, background1);
                 dc.fillRectangle(0, y, dc.getWidth(), dc.getFontHeight(Gfx.FONT_LARGE)+2*dc.getFontHeight(Gfx.FONT_NUMBER_HOT));
-                dc.setColor(foreground, background1);
+                dc.setColor(background3, background3);
+				drawHistory(dc,y,dc.getFontHeight(Gfx.FONT_LARGE)+2*dc.getFontHeight(Gfx.FONT_NUMBER_HOT),currHRhistory,currHRhistoryPoints,4,currTargetHR);
+                dc.setColor(foreground, Gfx.COLOR_TRANSPARENT);
                 dc.drawText(x, y, Gfx.FONT_LARGE, stageText+" "+repCounter.toString(), Gfx.TEXT_JUSTIFY_CENTER);
                 y += dc.getFontHeight(Gfx.FONT_LARGE)-1;
                 dc.drawText(0, y+20, Gfx.FONT_LARGE, "HR: ", Gfx.TEXT_JUSTIFY_LEFT);
@@ -364,7 +435,9 @@ class RecordSampleView extends Ui.View {
                 
                 dc.setColor(background2, background2);
                 dc.fillRectangle(0, y-3, dc.getWidth(), dc.getFontHeight(Gfx.FONT_NUMBER_HOT));
-                dc.setColor(foreground, background2);
+                dc.setColor(background4, background4);
+				drawHistory(dc,y-3,dc.getFontHeight(Gfx.FONT_NUMBER_HOT),prevHRhistory,prevHRhistoryPoints,1,prevTargetHR);
+                dc.setColor(foreground, Gfx.COLOR_TRANSPARENT);
                 dc.drawText(x, y-3, Gfx.FONT_NUMBER_MEDIUM, prevMinHR.toString()+"-"+prevMaxHR.toString(), Gfx.TEXT_JUSTIFY_CENTER);
             }
         }
