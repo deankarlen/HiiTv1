@@ -1,0 +1,14 @@
+<layout id="Button2Layout">
+    <button x="5" y="30" width="30" height="30" background="Gfx.COLOR_BLACK" behavior="onNextMode">
+        <state id="stateDefault" bitmap="@Drawables.DefaultAcceptButton" />
+        <state id="stateHighlighted" bitmap="@Drawables.PressedAcceptButton" />
+        <state id="stateSelected" bitmap="@Drawables.PressedAcceptButton" />
+        <state id="stateDisabled" color="Gfx.COLOR_BLACK" />
+    </button>
+    <button x="5" y="110" width="30" height="30" background="Gfx.COLOR_BLACK" behavior="onPreviousMode">
+        <state id="stateDefault" bitmap="@Drawables.DefaultCancelButton" />
+        <state id="stateHighlighted" bitmap="@Drawables.PressedCancelButton" />
+        <state id="stateSelected" bitmap="@Drawables.PressedCancelButton" />
+        <state id="stateDisabled" color="Gfx.COLOR_BLACK" />
+    </button>
+</layout>

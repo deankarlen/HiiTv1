@@ -6,8 +6,9 @@
 
 using Toybox.WatchUi as Ui;
 using Toybox.Attention as Attention;
+using Toybox.Position as Position;
 
-class ButtonDelegate extends Ui.BehaviorDelegate {
+class ButtonDelegate2 extends Ui.BehaviorDelegate {
 
 	var sampleView = null;
 
@@ -18,20 +19,18 @@ class ButtonDelegate extends Ui.BehaviorDelegate {
     function setSampleView(sv){
     	sampleView = sv;
     }
-
+    
     function onNextMode() {
-        sampleView.saveActivity();
+    	sampleView.startupSession();
+    	Ui.popView(Ui.SLIDE_IMMEDIATE);
         return true;
     }
 
     function onPreviousMode() {
-        sampleView.discardActivity();
-        return true;
-    }
-
-    function onBack() {
-    	sampleView.stage = 1;
+        Position.enableLocationEvents(Position.LOCATION_DISABLE, null);
+        sampleView.startupSession();
         Ui.popView(Ui.SLIDE_IMMEDIATE);
         return true;
     }
+
 }

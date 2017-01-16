@@ -28,11 +28,12 @@ using Toybox.SensorHistory as SensoryHistory;
 using Toybox.Math as Math;
 
 var session = null;
-// stage: 0 - not recording, 1 - high intensity, 2 - recovery
+// stage: 0 - warmup, 1 - high intensity, 2 - recovery, 3 - cool down
 var stage = 0;
 var repCounter = 0;
 var remainingTimeInStage = new Time.Duration(0);
 var activityStartMoment = Time.now();
+var coolStartMoment = null;
 var prevMaxHR = 0;
 var prevMinHR = 0;
 var currHR = 0;
@@ -64,7 +65,7 @@ class BaseInputDelegate extends Ui.BehaviorDelegate
     
 	var stageTimer = new Timer.Timer();
 	var lowVibeProfile = new Attention.VibeProfile(50,500);
-    var highVibeProfile = new Attention.VibeProfile(100,100);
+    var highVibeProfile = new Attention.VibeProfile(100,200);
     var rampUpVibe = [new Attention.VibeProfile(50,200),new Attention.VibeProfile(60,150),new Attention.VibeProfile(75,100),new Attention.VibeProfile(100,50)];
 	var rampDownVibe = [new Attention.VibeProfile(100,200),new Attention.VibeProfile(90,150),new Attention.VibeProfile(75,100),new Attention.VibeProfile(50,50)];
 
@@ -128,26 +129,43 @@ class BaseInputDelegate extends Ui.BehaviorDelegate
 		currHRhistoryPoints =0;
 	} 
 	
+	function startWarmup(){
+		var now = Time.now();
+		activityStartMoment = now;
+		stageTimer.start(method(:updateStage),updateMilliseconds,true);
+		Attention.backlight(true);
+        Ui.requestUpdate();
+	}
+	
+	function startCoolDown(){
+		stage = 3;
+		coolStartMoment = Time.now();
+		Attention.backlight(true);
+        Ui.requestUpdate();
+	}
+	
 	function startupStages(){
 		applyParams();
 		var now = Time.now();
-		activityStartMoment = now;
 	    Attention.vibrate(rampUpVibe);
 	    previousUpdateMoment = now;
 	    swapHistories();
 		stageEndMoment = now.add(workDuration);
 		remainingTimeInStage = stageEndMoment.subtract(now);
-		stage = 1;
-        stageTimer.start(method(:updateStage),updateMilliseconds,true);
+		stage = 1;       
         repCounter = 1;
         Attention.backlight(true);
         Ui.requestUpdate();
 	}
 	
 	function updateStage(){
+		if (stage==0 || stage==3){
+			Ui.requestUpdate();
+			return;
+		}
 		var now = Time.now();
 		remainingTimeInStage = stageEndMoment.subtract(now);
-		if (remainingTimeInStage.value() <= 0) {
+		if (stageEndMoment.lessThan(now)) {
 			if (stage == 1){
 				// High Intensity stage completed
 				Attention.vibrate(rampDownVibe);
@@ -228,6 +246,7 @@ class BaseInputDelegate extends Ui.BehaviorDelegate
         session.discard();
         Sensor.setEnabledSensors([]);
 		session = null;
+		stage = 0;
         Ui.popView(Ui.SLIDE_IMMEDIATE);
 	}
 	
@@ -237,6 +256,7 @@ class BaseInputDelegate extends Ui.BehaviorDelegate
         Sensor.setEnabledSensors([]);
         session.save();
 		session = null;
+		stage = 0;
         Ui.popView(Ui.SLIDE_IMMEDIATE);
 	}
 
@@ -245,6 +265,10 @@ class BaseInputDelegate extends Ui.BehaviorDelegate
     	// System.println("hr:"+hrinfo);
     	if (hrinfo != null){
 	    	currHR = hrinfo;
+	    	
+	    	if (stage==0 || stage==3){
+	    		return;
+	    	}
 	   
 	    	var stageDuration = workDuration;
 	    	if (stage == 2){
@@ -263,22 +287,37 @@ class BaseInputDelegate extends Ui.BehaviorDelegate
 			}
 		}
     }
+    
+    function startupSession(){
+    	session = Record.createSession({:name=>"Hiit", :sport=>Record.SPORT_TRAINING, :subSport=>Record.SUB_SPORT_CARDIO_TRAINING});
+        startWarmup();
+        Sensor.setEnabledSensors([Sensor.SENSOR_HEARTRATE]);
+        Sensor.enableSensorEvents(method(:onSensor));
+        session.start();
+        Ui.requestUpdate();
+    }
 
     function toggleActivity() {
         if( Toybox has :ActivityRecording ) {
             if( ( session == null ) || ( session.isRecording() == false ) ) {
-                session = Record.createSession({:name=>"Hiit", :sport=>Record.SPORT_TRAINING, :subSport=>Record.SUB_SPORT_CARDIO_TRAINING});
-                startupStages();
-                Sensor.setEnabledSensors([Sensor.SENSOR_HEARTRATE]);
-                Sensor.enableSensorEvents(method(:onSensor));
-                session.start();
-                Ui.requestUpdate();
+                var buttonView2 = new ButtonView2();
+				var buttonDelegate2 = new ButtonDelegate2();
+				buttonDelegate2.setSampleView(me);
+				Ui.pushView(buttonView2,buttonDelegate2, Ui.SLIDE_IMMEDIATE);
             }
             else if( ( session != null ) && session.isRecording() ) {
-                var buttonView = new ButtonView();
-				var buttonDelegate = new ButtonDelegate();
-				buttonDelegate.setSampleView(me);
-				Ui.pushView(buttonView,buttonDelegate, Ui.SLIDE_IMMEDIATE);
+            	if (stage==0){
+            		startupStages();
+            	}
+            	else if (stage==1 || stage==2){
+            		startCoolDown();
+            	}
+            	else if (stage==3){
+	                var buttonView = new ButtonView();
+					var buttonDelegate = new ButtonDelegate();
+					buttonDelegate.setSampleView(me);
+					Ui.pushView(buttonView,buttonDelegate, Ui.SLIDE_IMMEDIATE);
+				}
             }
         }
         return true;
@@ -371,7 +410,7 @@ class RecordSampleView extends Ui.View {
                 dc.drawLine(0,25,dc.getWidth(),25);
                 dc.drawLine(0,28,dc.getWidth(),28);
                 dc.drawText(dc.getWidth() / 2, 70, Gfx.FONT_MEDIUM, 
-                "Press right\n button to Start\n& Stop Recording", Gfx.TEXT_JUSTIFY_CENTER | Gfx.TEXT_JUSTIFY_VCENTER);
+                "Press right\n button to Begin\n", Gfx.TEXT_JUSTIFY_CENTER | Gfx.TEXT_JUSTIFY_VCENTER);
                 dc.drawLine(0,118,dc.getWidth(),118);
                 dc.drawText(dc.getWidth() / 2, 160, Gfx.FONT_MEDIUM, 
                 "Hold right\n button to\nChange Options", Gfx.TEXT_JUSTIFY_CENTER | Gfx.TEXT_JUSTIFY_VCENTER);
@@ -388,6 +427,10 @@ class RecordSampleView extends Ui.View {
                 var stageText = "Not Started";
                 var currTargetHR = 0;
                 var prevTargetHR = 0;
+                if (stage==0) {
+                	background1 = Gfx.COLOR_GREEN;
+                	stageText = "Warm Up";
+                }
                 if (stage==1) {
                 	background1 = Gfx.COLOR_RED;
                 	background2 = Gfx.COLOR_BLUE;
@@ -410,6 +453,10 @@ class RecordSampleView extends Ui.View {
                 	var pars1 = params[1];
                 	currTargetHR = pars1[2];
                 }
+                if (stage==3) {
+                	background1 = Gfx.COLOR_ORANGE;
+                	stageText = "Cool Down";
+                }
                 dc.setColor(background0, background0);
                 dc.fillRectangle(0, 0, dc.getWidth(), dc.getFontHeight(Gfx.FONT_LARGE));
                 dc.setColor(foreground, background0);
@@ -421,24 +468,47 @@ class RecordSampleView extends Ui.View {
                 
                 dc.setColor(background1, background1);
                 dc.fillRectangle(0, y, dc.getWidth(), dc.getFontHeight(Gfx.FONT_LARGE)+2*dc.getFontHeight(Gfx.FONT_NUMBER_HOT));
-                dc.setColor(background3, background3);
-				drawHistory(dc,y,dc.getFontHeight(Gfx.FONT_LARGE)+2*dc.getFontHeight(Gfx.FONT_NUMBER_HOT),currHRhistory,currHRhistoryPoints,4,currTargetHR);
+				if (stage==1 || stage==2){
+                	dc.setColor(background3, background3);
+					drawHistory(dc,y,dc.getFontHeight(Gfx.FONT_LARGE)+2*dc.getFontHeight(Gfx.FONT_NUMBER_HOT),currHRhistory,currHRhistoryPoints,4,currTargetHR);
+				}
                 dc.setColor(foreground, Gfx.COLOR_TRANSPARENT);
-                dc.drawText(x, y, Gfx.FONT_LARGE, stageText+" "+repCounter.toString(), Gfx.TEXT_JUSTIFY_CENTER);
+                var buffText = stageText;
+                if (stage == 1 || stage ==2){
+                	buffText = stageText+" "+repCounter.toString();
+                }
+                dc.drawText(x, y, Gfx.FONT_LARGE, buffText, Gfx.TEXT_JUSTIFY_CENTER);
                 y += dc.getFontHeight(Gfx.FONT_LARGE)-1;
                 dc.drawText(0, y+20, Gfx.FONT_LARGE, "HR: ", Gfx.TEXT_JUSTIFY_LEFT);
+                dc.setColor(background0, Gfx.COLOR_TRANSPARENT);
+                dc.drawText(x+1, y+1, Gfx.FONT_NUMBER_HOT, currHR.toString(), Gfx.TEXT_JUSTIFY_CENTER);
+                dc.setColor(foreground, Gfx.COLOR_TRANSPARENT);
                 dc.drawText(x, y, Gfx.FONT_NUMBER_HOT, currHR.toString(), Gfx.TEXT_JUSTIFY_CENTER);
                 y += dc.getFontHeight(Gfx.FONT_NUMBER_HOT)-1;
                 var timeString2 = durationToString(remainingTimeInStage);
+                if (stage==0){
+                	timeString2 = timeString;
+                }
+                if (stage==3){
+	                var dur3 = now.subtract(coolStartMoment);
+                	timeString2 = durationToString(dur3);
+                }
+                dc.setColor(background0, Gfx.COLOR_TRANSPARENT);
+                dc.drawText(x+1, y+1, Gfx.FONT_NUMBER_HOT, timeString2, Gfx.TEXT_JUSTIFY_CENTER);
+                dc.setColor(foreground, Gfx.COLOR_TRANSPARENT);
                 dc.drawText(x, y, Gfx.FONT_NUMBER_HOT, timeString2, Gfx.TEXT_JUSTIFY_CENTER);
                 y += dc.getFontHeight(Gfx.FONT_NUMBER_HOT)-1;
                 
-                dc.setColor(background2, background2);
-                dc.fillRectangle(0, y-3, dc.getWidth(), dc.getFontHeight(Gfx.FONT_NUMBER_HOT));
-                dc.setColor(background4, background4);
-				drawHistory(dc,y-3,dc.getFontHeight(Gfx.FONT_NUMBER_HOT),prevHRhistory,prevHRhistoryPoints,1,prevTargetHR);
-                dc.setColor(foreground, Gfx.COLOR_TRANSPARENT);
-                dc.drawText(x, y-3, Gfx.FONT_NUMBER_MEDIUM, prevMinHR.toString()+"-"+prevMaxHR.toString(), Gfx.TEXT_JUSTIFY_CENTER);
+                if (stage==1 || stage==2){
+                	dc.setColor(background2, background2);
+                	dc.fillRectangle(0, y-3, dc.getWidth(), dc.getFontHeight(Gfx.FONT_NUMBER_HOT));
+                	dc.setColor(background4, background4);
+					drawHistory(dc,y-3,dc.getFontHeight(Gfx.FONT_NUMBER_HOT),prevHRhistory,prevHRhistoryPoints,1,prevTargetHR);
+                	dc.setColor(background0, Gfx.COLOR_TRANSPARENT);                
+                	dc.drawText(x+1, y-2, Gfx.FONT_NUMBER_MEDIUM, prevMinHR.toString()+"-"+prevMaxHR.toString(), Gfx.TEXT_JUSTIFY_CENTER);
+                	dc.setColor(foreground, Gfx.COLOR_TRANSPARENT);                
+                	dc.drawText(x, y-3, Gfx.FONT_NUMBER_MEDIUM, prevMinHR.toString()+"-"+prevMaxHR.toString(), Gfx.TEXT_JUSTIFY_CENTER);
+                }
             }
         }
         // tell the user this sample doesn't work
