@@ -74,10 +74,10 @@ class BaseInputDelegate extends Ui.BehaviorDelegate
 	
 	function applyParams(){
 		var workParams = params[0];
-		workDuration = new Time.Duration(workParams[0]*60+workParams[1]);
+		workDuration = new Time.Duration(workParams[0]*60+workParams[1]-1);
 		workHR = workParams[2];
 		var restParams = params[1];
-    	restDuration = new Time.Duration(restParams[0]*60+restParams[1]);
+    	restDuration = new Time.Duration(restParams[0]*60+restParams[1]-1);
     	restHR = restParams[2];
 	}
 	
@@ -231,6 +231,14 @@ class BaseInputDelegate extends Ui.BehaviorDelegate
     	return true;
     }
 
+	function onBack(){
+	// only exit application if nothing has started yet
+		if (stage==0){
+			return false;
+		}
+		return true;
+	}
+
 	function onMenu(){
 		var menuButtonView = new MenuButtonView();
 		var menuButtonDelegate = new MenuButtonDelegate();
@@ -348,6 +356,7 @@ class RecordSampleView extends Ui.View {
 
     function onHide() {
     }
+    
     
     //! Restore the state of the app and prepare the view to be shown.
     function onShow() {
